@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cart</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="chatgptsample.html">Home</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<h1>Kawaii Corner</h1>
+		<a href="#" class="cart"><img src="img\cart.png" alt="Shopping Cart" width = 50></a>
+	</header>
+
+	<main>
+		<section class="cart">
+			<h2>Cart</h2>
+			<ul>
+				<!-- Loop through the items in the cart -->
+				<script>
+					var cartItems = JSON.parse(localStorage.getItem('cart'));
+					var uniqueItems = [];
+					for (var i = 0; i < cartItems.length; i++) {
+						// Check if the current item is already in the unique items array
+						if (!uniqueItems.includes(cartItems[i].title)) {
+							// Add the current item to the unique items array
+							uniqueItems.push(cartItems[i].title);
+							// Create a new list item for the current item
+							var listItem = document.createElement('li');
+							// Add the artwork image for the current item
+							var image = document.createElement('img');
+							image.src = cartItems[i].artwork;
+							listItem.appendChild(image);
+							// Add the title of the current item
+							var title = document.createElement('p');
+							title.innerHTML = cartItems[i].title;
+							listItem.appendChild(title);
+							// Add the price of the current item
+							var price = document.createElement('p');
+							price.innerHTML = cartItems[i].price;
+							listItem.appendChild(price);
+							// Add the list item to the cart section
+							document.querySelector('.cart ul').appendChild(listItem);
+						}
+					}
+				</script>
+			</ul>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Kawaii Corner</p>
+	</footer>
+</body>
+</html>

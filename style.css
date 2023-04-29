@@ -1,0 +1,238 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f1f1f1;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #f06d8c;
+  }
+  
+  h1, h2, h3 {
+    margin: 1em 0;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Header styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 1em;
+    list-style: none;
+  }
+  
+  nav a {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Banner styles */
+  .banner {
+    background-color: #f06d8c;
+    color: #fff;
+    text-align: center;
+    padding: 2em;
+  }
+  
+  .banner h2 {
+    font-size: 2em;
+  }
+  
+  .banner p {
+    margin: 1em 0;
+  }
+  
+  /* Featured styles */
+  .featured {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2em;
+    text-align: center;
+  }
+  
+  .featured-heading {
+    margin-bottom: 2em;
+  }
+  
+  /* Artworks styles */
+  .artworks-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2em;
+  }
+  
+  .artwork {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em;
+    width: 400px;
+    justify-content: space-between;
+    margin: 0.5em;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .artwork:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .artwork img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .artwork h3 {
+    font-size: 1em;
+    margin: 0.5em;
+  }
+  
+  .artwork p {
+    font-weight: bold;
+    margin: 0.5em;
+  }
+  
+  .button {
+    display: block;
+    margin: 1em auto;
+    padding: 0.5em 1em;
+    background-color: #f06d8c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+  } 
+  
+  .button:hover {
+    background-color: #e65778;
+    cursor: pointer;
+  }
+  
+  /* Contact styles */
+/* Contact Page */
+
+.contact {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 36px;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact input[type="text"],
+  .contact input[type="email"],
+  .contact textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .contact textarea {
+    height: 150px;
+  }
+  
+  .contact button {
+    padding: 10px 30px;
+    background-color: #ff7aa2;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .contact button:hover {
+    background-color: #ff6a8d;
+  }
+  
+  footer {
+    text-align: center;
+  }
+
+
+  /* Shop page styles */
+
+.shop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .artworkshop {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .artworkshop img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .artworkshop h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .artworkshop p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  
+  
