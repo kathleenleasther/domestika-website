@@ -1,9 +1,9 @@
 # domestika-website (evolved into kawaii corner)
 personal project
 
-Features to work on:
+features to work on:
 
-Host the site in gcp
+host the site in gcp
 
 make contact us page work
 
