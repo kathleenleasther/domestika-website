@@ -1,5 +1,27 @@
-# domestika-website
+# domestika-website (evolved into kawaii corner)
+personal project
 
-Domestika Course Design, Development, and Launch of Website 
+features to work on:
+
+host the site in gcp
+
+make contact us page work
+
+make the add to cart buttons work
+
+create an add to cart page with all the art works added to cart
+
+create a check out option with total amount
+
+create the check out page to include a form asking for customer details
+
+create order page to include total and details of where to send payment
+
+automated e-mail sent that includes payment options
+
+
+
+
+continue domestika Course Design, Development, and Launch of Website 
 by Javier Usobiaga Ferrer
 
